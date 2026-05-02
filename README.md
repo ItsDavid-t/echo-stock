@@ -1,17 +1,100 @@
-📦 Echo Stock | Enterprise-Grade Inventory ManagementEcho Stock is a professional-grade inventory starter kit engineered for scalability and high performance. This project demonstrates the implementation of Clean Architecture to solve real-world business logic challenges, ensuring a codebase that is easy to maintain, test, and evolve.📸 App Preview💎 Engineering Excellence (Technical Specs)The project adheres to the highest standards of the Flutter ecosystem as of March 2026:Clean Architecture: Strict separation of concerns across Domain, Data, and Presentation layers.Robust State Management: Powered by Bloc/Cubit for predictable and reactive UI states.Functional Error Handling: Utilizing the Either<Failure, T> pattern to manage exceptions gracefully without breaking the flow.Dependency Injection: Clean service management using GetIt.Zero-Issue Codebase: Fully compliant with flutter analyze and dart format (0 issues found).Enterprise UI: Modern Material 3 implementation with a cohesive Dark/Light theme engine.🏗️ Architectural OverviewThe project structure is designed for team collaboration and long-term maintenance:LayerResponsibilityKey ComponentsPresentationUI Logic & User FeedbackCubits, Blocs, Custom Widgets, ThemesDomainBusiness Rules & LogicEntities, Repository Interfaces, Use CasesDataData Sources & AdaptersRepository Implementations, Models, API/DB SourcesConfigApp EnvironmentDependency Injection, Themes, Constants🛣️ Roadmap & Future ScalabilityEcho Stock is built with the future in mind. Current planned enhancements include:Offline-First Strategy: Integration of Drift (Room for Flutter) or Hive for local persistence.Declarative Navigation: Migration to GoRouter for complex deep-linking support.Automated Quality Assurance: CI/CD integration via GitHub Actions for automated testing and deployment.Full Test Suite: 100% coverage goals for Unit, Widget, and Integration tests.🚀 Getting StartedEnsure you have the Flutter SDK installed on your Ubuntu system.Bash# Clone the professional repository
-git clone [https://github.com/ItsDavid-t/echo-stock.git](https://github.com/ItsDavid-t/echo-stock.git)
+lib/
+ ├── configAquí tienes el esqueleto de tu README optimizado. Es visual, directo y profesional, diseñado para que cualquier cliente entienda que sabes lo que haces en menos de un minuto.
 
-# Install dependencies
-flutter pub get
+---
 
-# Run the application
-flutter run
-🤝 Contribution & Professional GrowthI am a 3rd-year Computer Engineering student at UCI dedicated to building high-impact software. If you have suggestions or want to collaborate, feel free to open a Pull Request!"Simplicity in code is the ultimate sophistication."¿Por qué este README impresiona más?Promesa de Valor: No dices que es un "proyecto de clase", dices que es un Enterprise-Grade Starter Kit.Tabla de Arquitectura: Visualizar la estructura ayuda al cliente a entender que no tiraste código al azar, sino que diseñaste un sistema.Roadmap: Demuestra que tienes visión de producto y sabes qué tecnologías (Drift, GoRouter) se usan en la industria real.Imágenes: El espacio de capturas es vital. Un cliente decide en 3 segundos si le gusta el diseño antes de leer una sola línea de código.Un toque pro: Cuando tomes las capturas de pantalla, asegúrate de que el emulador tenga la barra de estado limpia yTu README de Echo Stock ya tiene una base técnica sólida, pero para que un cliente o reclutador se lleve una "expectativa grande", necesitamos transformar un reporte técnico en una propuesta de valor.Aquí tienes una versión optimizada que utiliza un lenguaje más orientado a la industria, resalta tu dominio de la Clean Architecture y añade secciones visuales estratégicas.📦 Echo Stock | Enterprise-Grade Inventory ManagementEcho Stock is a professional-grade inventory starter kit engineered for scalability and high performance. This project demonstrates the implementation of Clean Architecture to solve real-world business logic challenges, ensuring a codebase that is easy to maintain, test, and evolve.📸 App Preview💎 Engineering Excellence (Technical Specs)The project adheres to the highest standards of the Flutter ecosystem as of March 2026:Clean Architecture: Strict separation of concerns across Domain, Data, and Presentation layers.Robust State Management: Powered by Bloc/Cubit for predictable and reactive UI states.Functional Error Handling: Utilizing the Either<Failure, T> pattern to manage exceptions gracefully without breaking the flow.Dependency Injection: Clean service management using GetIt.Zero-Issue Codebase: Fully compliant with flutter analyze and dart format (0 issues found).Enterprise UI: Modern Material 3 implementation with a cohesive Dark/Light theme engine.🏗️ Architectural OverviewThe project structure is designed for team collaboration and long-term maintenance:LayerResponsibilityKey ComponentsPresentationUI Logic & User FeedbackCubits, Blocs, Custom Widgets, ThemesDomainBusiness Rules & LogicEntities, Repository Interfaces, Use CasesDataData Sources & AdaptersRepository Implementations, Models, API/DB SourcesConfigApp EnvironmentDependency Injection, Themes, Constants🛣️ Roadmap & Future ScalabilityEcho Stock is built with the future in mind. Current planned enhancements include:Offline-First Strategy: Integration of Drift (Room for Flutter) or Hive for local persistence.Declarative Navigation: Migration to GoRouter for complex deep-linking support.Automated Quality Assurance: CI/CD integration via GitHub Actions for automated testing and deployment.Full Test Suite: 100% coverage goals for Unit, Widget, and Integration tests.🚀 Getting StartedEnsure you have the Flutter SDK installed on your Ubuntu system.Bash# Clone the professional repository
-git clone [https://github.com/ItsDavid-t/echo-stock.git](https://github.com/ItsDavid-t/echo-stock.git)
+# 📦 Echo Stock
 
-# Install dependencies
-flutter pub get
+> **Solución integral para gestión de inventarios con arquitectura de grado empresarial.**
 
-# Run the application
-flutter run
-🤝 Contribution & Professional GrowthI am a 3rd-year Computer Engineering student at UCI dedicated to building high-impact software. If you have suggestions or want to collaborate, feel free to open a Pull Request!"Simplicity in code is the ultimate sophistication."
+<p align="left">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" />
+  <img src="https://img.shields.io/badge/Clean_Architecture-black?style=for-the-badge" />
+</p>
+
+---
+
+### 📱 Vista Previa
+| Dashboard Principal | Gestión de Stock | Analíticas / Modo Oscuro |
+| :---: | :---: | :---: |
+| ![Captura 1](URL_DE_TU_IMAGEN) | ![Captura 2](URL_DE_TU_IMAGEN) | ![Captura 3](URL_DE_TU_IMAGEN) |
+
+---
+
+### 💎 Propuesta de Valor
+Echo Stock no es solo un CRUD; es un ecosistema diseñado para la **escalabilidad**. 
+*   **Interfaz:** Implementación completa de **Material 3** con soporte nativo para temas.
+*   **Rendimiento:** Lógica reactiva que minimiza el consumo de recursos en dispositivos móviles.
+*   **Mantenimiento:** Código modular que permite añadir funcionalidades sin romper el sistema existente.
+
+---
+
+### 🛠️ Especificaciones Técnicas
+*   **Gestión de Estado:** `Cubit` & `BLoC` (Flujo de datos predecible).
+*   **Backend:** `FastAPI` con base de datos relacional `PostgreSQL`.
+*   **Inyección de Dependencias:** `GetIt` para un desacoplamiento total.
+*   **Manejo de Errores:** Programación funcional con el patrón `Either` (evita excepciones inesperadas).
+
+---
+
+### 🏗️ Estructura del Proyecto
+Basado en los principios de **Clean Architecture**:
+
+
+```text
+lib/
+ ├── config/       # Temas, Rutas e Inyección de Dependencias
+ ├── domain/       # Entidades puras y casos de uso (Reglas de negocio)
+ Aquí tienes el esqueleto de tu README optimizado. Es visual, directo y profesional, diseñado para que cualquier cliente entienda que sabes lo que haces en menos de un minuto.
+
+---
+
+# 📦 Echo Stock
+
+> **Solución integral para gestión de inventarios con arquitectura de grado empresarial.**
+
+<p align="left">
+  <img src="[https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)" />
+  <img src="[https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)" />
+  <img src="[https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)" />
+  <img src="[https://img.shields.io/badge/Clean_Architecture-black?style=for-the-badge](https://img.shields.io/badge/Clean_Architecture-black?style=for-the-badge)" />
+</p>
+
+---
+
+### 📱 Vista Previa
+| Dashboard Principal | Gestión de Stock | Analíticas / Modo Oscuro |
+| :---: | :---: | :---: |
+| ![Captura 1](URL_DE_TU_IMAGEN) | ![Captura 2](URL_DE_TU_IMAGEN) | ![Captura 3](URL_DE_TU_IMAGEN) |
+
+---
+
+### 💎 Propuesta de Valor
+Echo Stock no es solo un CRUD; es un ecosistema diseñado para la **escalabilidad**. 
+*   **Interfaz:** Implementación completa de **Material 3** con soporte nativo para temas.
+*   **Rendimiento:** Lógica reactiva que minimiza el consumo de recursos en dispositivos móviles.
+*   **Mantenimiento:** Código modular que permite añadir funcionalidades sin romper el sistema existente.
+
+---
+
+### 🛠️ Especificaciones Técnicas
+*   **Gestión de Estado:** `Cubit` & `BLoC` (Flujo de datos predecible).
+*   **Backend:** `FastAPI` con base de datos relacional `PostgreSQL`.
+*   **Inyección de Dependencias:** `GetIt` para un desacoplamiento total.
+*   **Manejo de Errores:** Programación funcional con el patrón `Either` (evita excepciones inesperadas).
+
+---
+
+### 🏗️ Estructura del Proyecto
+Basado en los principios de **Clean Architecture**:
+
+
+
+```text
+lib/
+ ├── config/       # Temas, Rutas e Inyección de Dependencias
+ ├── domain/       # Entidades puras y casos de uso (Reglas de negocio)
+ ├── data/         # Implementación de Repositorios y Modelos
+ └── presentation/ # UI (Screens/Widgets) y lógica de estado (Cubit)
