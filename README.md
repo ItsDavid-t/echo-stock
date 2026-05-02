@@ -1,71 +1,54 @@
-# Echo Stock
-
-App Flutter para gestión de inventarios (CRUD productos/categorías) con diseño moderno y clean architecture.
-
-## Estado actual (evaluación 1-10)
-- Calidad actual: **8.5 / 10**
-- Analizado y limpio con `flutter analyze` (0 issues).
-- Formateado con `dart format`.
-- Dependencias minoritarias con versiones no últimas (recomendado actualizar con `dart pub upgrade`).
-- No se encontraron `TODO`, `print()` ni `// ignore` en `lib` y `test`.
-
-## Descripción breve
-Echo Stock es un starter kit de inventario con:
-- Separación de capas (domain/data/presentation)
-- Gestión de estado con Cubits/Blocs en `presentation/cubit`
-- Tema oscuro completo bajo `lib/config/theme/app_theme.dart`
-- Manejo funcional de errores (`Either<Failure, T>`)
-- DI con GetIt (`service_locator.dart`)
-
-## Diagnóstico técnico aplicado (mar 2026)
-- `flutter analyze`: OK
-- `dart format` sobre todo `lib/` y `test/`: OK
-- `dart pub outdated --no-dev-dependencies`: versiones posibles de upgrade:
-  - `cupertino_icons: 1.0.8 → 1.0.9`
-  - `async: 2.13.0 → 2.13.1`
-  - `meta: 1.17.0 → 1.18.2`
-  - `vector_math: 2.2.0 → 2.3.0`
-  - (transitive, echo_stock notifica `native_toolchain_c`, `path_provider_android` también)
-
-## Checklist recomendada antes de release
-1. `dart pub upgrade` + `flutter clean` + `flutter pub get`
-2. `flutter test` completo y `flutter test integration_test`
-3. Añadir `analysis_options.yaml` con rules estrictas.
-4. Establecer CI (GitHub Actions) para `flutter analyze` y tests.
-5. Versionado semántico y changelog por commits.
-6. Implementar repositorios de datos reales (API o DB local) y states para UI.
-
-## Uso rápido
-```bash
-flutter pub get
-flutter run
-```
-
-## Estructura de carpetas (resumen)
-- `lib/config/theme` → tema de la app
-- `lib/domain` → entidades / repositorios / usecases
-- `lib/data` → data sources / repositorios impl
-- `lib/presentation` → cubits/screens/widgets
-
-## Cambios aplicados en revisión
-- Tema actualizado en `lib/config/theme/app_theme.dart` (Material 3, botones, estilo uniforme)
-- README reforzado con estado real y pasos de profesionalización
-
-## Siguientes pasos clave
-1. migrar a `go_router` + navegación declarativa
-2. Implementar capas de almacenamiento con `drift`/`hive` o API `Dio`
-3. tests unitarios para `usecases`, tests widget para pantallas
-4. Integración continua y publicación de APK/IPA
+---
+<p align="right">Developed with ❤️ by <b>ItsDavid-t</b> 🐢</p>
 
 ---
 
-### Cómo contribuir
-1. Clona `git clone <repo>`
-2. Crea rama `feature/<nombre>`
-3. Asegura tests y `flutter analyze`
-4. Pull request con descripción + evidencia de test verde
+
+
+
+
+# 📦 Echo Stock
+
+> **Enterprise-grade inventory management solution built with architectural excellence.**
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" />
+  <img src="https://img.shields.io/badge/Clean_Architecture-black?style=for-the-badge" />
+</p>
 
 ---
 
-"La simplicidad en código es la mayor sofisticación."
+### 📱 Preview
+| Main Dashboard | Stock Management | Analytics / Dark Mode |
+| :---: | :---: | :---: |
+| ![Dashboard](./assets/dashboard.png) | ![Management](./assets/management.png) | ![Dark Mode](./assets/dark_mode.png) |
 
+---
+
+### 💎 Value Proposition
+Echo Stock is more than a simple CRUD; it is an ecosystem engineered for **scalability**.
+*   **Modern UI:** Full **Material 3** implementation with native multi-theme support.
+*   **Performance:** Reactive logic designed to minimize resource consumption on mobile devices.
+*   **Maintainability:** Modular codebase allowing new features without breaking existing core logic.
+*   **Smart Retention:** Built-in "Reserved" status for products to prevent accidental data loss.
+
+---
+
+### 🛠️ Technical Specifications
+*   **State Management:** `Cubit` & `BLoC` for a predictable data flow.
+*   **Backend:** `FastAPI` powered by a `PostgreSQL` relational database.
+*   **Dependency Injection:** `GetIt` for total decoupling of services.
+*   **Error Handling:** Functional programming approach using the `Either` pattern.
+
+---
+
+### 🏗️ Project Structure
+Following strict **Clean Architecture** principles:
+```text
+── lib
+│   ├── config          # Themes and Global Configuration
+│   ├── data            # Repositories Impl & Data Sources
+│   ├── domain          # Entities, Use Cases & Repository Interfaces
+│   └── presentation    # UI Logic (Cubits), Screens & Widgets
