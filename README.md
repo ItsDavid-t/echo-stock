@@ -1,5 +1,3 @@
----
-
 # 📦 Echo Stock
 
 > **Solución integral para gestión de inventarios con arquitectura de grado empresarial.**
@@ -40,3 +38,8 @@ Echo Stock no es solo un CRUD; es un ecosistema diseñado para la **escalabilida
 Basado en los principios de **Clean Architecture**:
 
 
+```text
+lib/
+ ├── config/       # Temas, Rutas e Inyección de Dependencias
+ ├── domain/       # Entidades puras y casos de uso (Reglas de negocio)
+ Aquí tienes el esqueleto de tu README optimizado. Es visual, directo y profesional, diseñado para que cualquier cliente entienda que sabes lo que haces en menos de un minuto.
