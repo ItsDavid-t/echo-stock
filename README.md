@@ -1,21 +1,6 @@
 ---
 <p align="right">Developed with ❤️ by <b>ItsDavid-t</b> 🐢</p>
 
----
-
-### 🖼️ Cómo poner las imágenes para que todos las vean
-
-Para que las imágenes se vean correctamente en GitHub, sigue estos pasos:
-
-1.  **Crea una carpeta:** En la raíz de tu proyecto (donde está la carpeta `lib`), crea una carpeta llamada `assets`.
-2.  **Sube las capturas:** Guarda tus imágenes ahí con nombres sencillos: `dashboard.png`, `management.png`, `dark_mode.png`.
-3.  **Haz el Push:** Sube esos archivos a GitHub con el resto de tu código.
-4.  **Usa rutas relativas:** En el código del README que te puse arriba, fíjate que usé `./assets/nombre.png`. GitHub detectará automáticamente que debe buscar la imagen dentro de tu repositorio y la mostrará a cualquier visitante.
-
-**Truco de Ingeniero:** Si quieres que el README se vea aún más limpio, puedes subir las imágenes a un "Issue" vacío en GitHub o a una rama llamada `media` y usar la URL directaAquí tienes la versión final en inglés de tu README. He optimizado los términos técnicos para que suenen más profesionales (como usar *Soft Delete* en lugar de solo *Recycle Bin*) y te explico exactamente cómo gestionar las imágenes.
-
----
-
 # 📦 Echo Stock
 
 > **Enterprise-grade inventory management solution built with architectural excellence.**
