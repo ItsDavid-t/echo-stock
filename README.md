@@ -1,6 +1,24 @@
+---
+<p align="right">Developed with ❤️ by <b>ItsDavid-t</b> 🐢</p>
+
+---
+
+### 🖼️ Cómo poner las imágenes para que todos las vean
+
+Para que las imágenes se vean correctamente en GitHub, sigue estos pasos:
+
+1.  **Crea una carpeta:** En la raíz de tu proyecto (donde está la carpeta `lib`), crea una carpeta llamada `assets`.
+2.  **Sube las capturas:** Guarda tus imágenes ahí con nombres sencillos: `dashboard.png`, `management.png`, `dark_mode.png`.
+3.  **Haz el Push:** Sube esos archivos a GitHub con el resto de tu código.
+4.  **Usa rutas relativas:** En el código del README que te puse arriba, fíjate que usé `./assets/nombre.png`. GitHub detectará automáticamente que debe buscar la imagen dentro de tu repositorio y la mostrará a cualquier visitante.
+
+**Truco de Ingeniero:** Si quieres que el README se vea aún más limpio, puedes subir las imágenes a un "Issue" vacío en GitHub o a una rama llamada `media` y usar la URL directaAquí tienes la versión final en inglés de tu README. He optimizado los términos técnicos para que suenen más profesionales (como usar *Soft Delete* en lugar de solo *Recycle Bin*) y te explico exactamente cómo gestionar las imágenes.
+
+---
+
 # 📦 Echo Stock
 
-> **Solución integral para gestión de inventarios con arquitectura de grado empresarial.**
+> **Enterprise-grade inventory management solution built with architectural excellence.**
 
 <p align="left">
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
@@ -11,94 +29,35 @@
 
 ---
 
-### 📱 Vista Previa
-| Dashboard Principal | Gestión de Stock | Analíticas / Modo Oscuro |
+### 📱 Preview
+| Main Dashboard | Stock Management | Analytics / Dark Mode |
 | :---: | :---: | :---: |
-| ![Captura 1](URL_DE_TU_IMAGEN) | ![Captura 2](URL_DE_TU_IMAGEN) | ![Captura 3](URL_DE_TU_IMAGEN) |
+| ![Dashboard](./assets/dashboard.png) | ![Management](./assets/management.png) | ![Dark Mode](./assets/dark_mode.png) |
 
 ---
 
-### 💎 Propuesta de Valor
-Echo Stock no es solo un CRUD; es un ecosistema diseñado para la **escalabilidad**. 
-*   **Interfaz:** Implementación completa de **Material 3** con soporte nativo para temas.
-*   **Rendimiento:** Lógica reactiva que minimiza el consumo de recursos en dispositivos móviles.
-*   **Mantenimiento:** Código modular que permite añadir funcionalidades sin romper el sistema existente.
+### 💎 Value Proposition
+Echo Stock is more than a simple CRUD; it is an ecosystem engineered for **scalability**.
+*   **Modern UI:** Full **Material 3** implementation with native multi-theme support.
+*   **Performance:** Reactive logic designed to minimize resource consumption on mobile devices.
+*   **Maintainability:** Modular codebase allowing new features without breaking existing core logic.
+*   **Smart Retention:** Built-in "Reserved" status for products to prevent accidental data loss.
 
 ---
 
-### 🛠️ Especificaciones Técnicas
-*   **Gestión de Estado:** `Cubit` & `BLoC` (Flujo de datos predecible).
-*   **Backend:** `FastAPI` con base de datos relacional `PostgreSQL`.
-*   **Inyección de Dependencias:** `GetIt` para un desacoplamiento total.
-*   **Manejo de Errores:** Programación funcional con el patrón `Either` (evita excepciones inesperadas).
+### 🛠️ Technical Specifications
+*   **State Management:** `Cubit` & `BLoC` for a predictable data flow.
+*   **Backend:** `FastAPI` powered by a `PostgreSQL` relational database.
+*   **Dependency Injection:** `GetIt` for total decoupling of services.
+*   **Error Handling:** Functional programming approach using the `Either` pattern.
 
 ---
 
-### 🏗️ Estructura del Proyecto
-Basado en los principios de **Clean Architecture**:
-
-
+### 🏗️ Project Structure
+Following strict **Clean Architecture** principles:
 ```text
 ── lib
-│   ├── config
-│   │   └── theme
-│   │       └── app_theme.dart
-│   ├── data
-│   │   ├── datasources
-│   │   │   └── local_product_data_source.dart
-│   │   └── repositories
-│   │       ├── category_repository_impl.dart
-│   │       └── product_repository_impl.dart
-│   ├── domain
-│   │   ├── core
-│   │   │   ├── di
-│   │   │   │   └── service_locator.dart
-│   │   │   └── failures.dart
-│   │   ├── entities
-│   │   │   ├── category.dart
-│   │   │   └── product.dart
-│   │   ├── repositories
-│   │   │   ├── category_repository.dart
-│   │   │   └── product_repository.dart
-│   │   └── usecases
-│   │       ├── category
-│   │       │   ├── add_category.dart
-│   │       │   ├── ensure_sub_category.dart
-│   │       │   ├── get_all_categories.dart
-│   │       │   ├── get_category_by_id.dart
-│   │       │   ├── get_main_categories.dart
-│   │       │   └── get_subcategories.dart
-│   │       └── product
-│   │           ├── add_product.dart
-│   │           ├── delete_product.dart
-│   │           ├── get_all_products.dart
-│   │           ├── get_archived_product.dart
-│   │           ├── get_archived_products_by_categories.dart
-│   │           ├── get_products_by_categories.dart
-│   │           └── upgrate_product.dart
-│   ├── main.dart
-│   └── presentation
-│       ├── cubit
-│       │   ├── category
-│       │   │   ├── category_cubit.dart
-│       │   │   └── category_state.dart
-│       │   └── product
-│       │       ├── product_cubit.dart
-│       │       └── product_state.dart
-│       ├── screens
-│       │   ├── add_product_screen.dart
-│       │   ├── home_screen.dart
-│       │   └── recycle_bin_screen.dart
-│       └── widgets
-│           ├── category_list.dart
-│           ├── category_list_skeleton.dart
-│           ├── classification_filter_list.dart
-│           ├── custom_drawer.dart
-│           ├── custom_search_bar.dart
-│           ├── custom_text_form_field.dart
-│           ├── empty_state.dart
-│           ├── product_card.dart
-│           ├── product_detail_overlay.dart
-│           ├── product_filtrer_panel.dart
-│           ├── product_list_skeleton.dart
-│           └── product_list_view.dart
+│   ├── config          # Themes and Global Configuration
+│   ├── data            # Repositories Impl & Data Sources
+│   ├── domain          # Entities, Use Cases & Repository Interfaces
+│   └── presentation    # UI Logic (Cubits), Screens & Widgets
