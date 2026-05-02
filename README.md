@@ -1,6 +1,6 @@
 ---
 <p align="right">Developed with ❤️ by <b>ItsDavid-t</b> 🐢</p>
-
+---
 # 📦 Echo Stock
 
 > **Enterprise-grade inventory management solution built with architectural excellence.**
