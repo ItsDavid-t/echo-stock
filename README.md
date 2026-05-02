@@ -24,7 +24,7 @@
 
 | Main Dashboard | Navigation Drawer | Add Product Form |
 | :---: | :---: | :---: |
-| ![Dashboard](./assets/cap1.png) | ![Drawer](./assets/cap2.png) | ![Form](./assets/cap3.png) |
+| ![Dashboard](./assets/images/cap1.png) | ![Drawer](./assets/images/cap2.png) | ![Form](./assets/images/cap3.png) |
 
 
 ---
