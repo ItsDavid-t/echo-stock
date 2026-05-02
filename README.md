@@ -39,7 +39,66 @@ Basado en los principios de **Clean Architecture**:
 
 
 ```text
-lib/
- ├── config/       # Temas, Rutas e Inyección de Dependencias
- ├── domain/       # Entidades puras y casos de uso (Reglas de negocio)
- Aquí tienes el esqueleto de tu README optimizado. Es visual, directo y profesional, diseñado para que cualquier cliente entienda que sabes lo que haces en menos de un minuto.
+── lib
+│   ├── config
+│   │   └── theme
+│   │       └── app_theme.dart
+│   ├── data
+│   │   ├── datasources
+│   │   │   └── local_product_data_source.dart
+│   │   └── repositories
+│   │       ├── category_repository_impl.dart
+│   │       └── product_repository_impl.dart
+│   ├── domain
+│   │   ├── core
+│   │   │   ├── di
+│   │   │   │   └── service_locator.dart
+│   │   │   └── failures.dart
+│   │   ├── entities
+│   │   │   ├── category.dart
+│   │   │   └── product.dart
+│   │   ├── repositories
+│   │   │   ├── category_repository.dart
+│   │   │   └── product_repository.dart
+│   │   └── usecases
+│   │       ├── category
+│   │       │   ├── add_category.dart
+│   │       │   ├── ensure_sub_category.dart
+│   │       │   ├── get_all_categories.dart
+│   │       │   ├── get_category_by_id.dart
+│   │       │   ├── get_main_categories.dart
+│   │       │   └── get_subcategories.dart
+│   │       └── product
+│   │           ├── add_product.dart
+│   │           ├── delete_product.dart
+│   │           ├── get_all_products.dart
+│   │           ├── get_archived_product.dart
+│   │           ├── get_archived_products_by_categories.dart
+│   │           ├── get_products_by_categories.dart
+│   │           └── upgrate_product.dart
+│   ├── main.dart
+│   └── presentation
+│       ├── cubit
+│       │   ├── category
+│       │   │   ├── category_cubit.dart
+│       │   │   └── category_state.dart
+│       │   └── product
+│       │       ├── product_cubit.dart
+│       │       └── product_state.dart
+│       ├── screens
+│       │   ├── add_product_screen.dart
+│       │   ├── home_screen.dart
+│       │   └── recycle_bin_screen.dart
+│       └── widgets
+│           ├── category_list.dart
+│           ├── category_list_skeleton.dart
+│           ├── classification_filter_list.dart
+│           ├── custom_drawer.dart
+│           ├── custom_search_bar.dart
+│           ├── custom_text_form_field.dart
+│           ├── empty_state.dart
+│           ├── product_card.dart
+│           ├── product_detail_overlay.dart
+│           ├── product_filtrer_panel.dart
+│           ├── product_list_skeleton.dart
+│           └── product_list_view.dart
