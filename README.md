@@ -21,9 +21,15 @@
 ---
 
 ### 📱 Preview
+<<<<<<< HEAD
 | Main Dashboard | Stock Management | Analytics / Dark Mode |
 | :---: | :---: | :---: |
 | ![Dashboard](./assets/dashboard.png) | ![Management](./assets/management.png) | ![Dark Mode](./assets/dark_mode.png) |
+=======
+| Main Dashboard | Navigation Drawer | Add Product Form |
+| :---: | :---: | :---: |
+| ![Dashboard](./assets/cap1.png) | ![Drawer](./assets/cap2.png) | ![Form](./assets/cap3.png) |
+>>>>>>> 1ae6d97a12713c65dbde10e240c922e16ff95f3c
 
 ---
 
